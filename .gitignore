@@ -1,0 +1,6 @@
+s3-reverse-proxy/node_modules/node_modules/
+api-server/node_modules/
+project-deployer/node_modules/
+.env
+build-server/node_modules/
+node_modules/
