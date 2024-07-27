@@ -1,13 +1,13 @@
-**Setup Guide**
+_**Setup Guide**
 This Project contains following services and folders:
 
-**api-server:** HTTP API Server for REST API's
+_**api-server:**_ HTTP API Server for REST API's
 
-**build-server:** Docker Image code which clones, builds and pushes the build to S3
+_**build-server:**_ Docker Image code which clones, builds and pushes the build to S3
 
-**s3-reverse-proxy:** Reverse Proxy the subdomains and domains to s3 bucket static assets
+_**s3-reverse-proxy:**_ Reverse Proxy the subdomains and domains to s3 bucket static assets
 
-**Local Setup**
+_**Local Setup**_
 
 Run npm install in all the 3 services i.e. api-server, build-server and s3-reverse-proxy
 
@@ -17,12 +17,12 @@ Setup the api-server by providing all the required config such as TASK ARN and C
 
 Run node index.js in api-server and s3-reverse-proxy
 
-At this point following services would be up and running:
+**At this point following services would be up and running:**
 
-S.No	Service	PORT
+**S.No	Service	PORT**
 
-1	api-server	:9000
-2	socket.io-server	:9002
-3	s3-reverse-proxy	:8000
++	api-server: 9000
++	socket.io-server: 9002
++	s3-reverse-proxy: 8000
+![diagram-export-7-27-2024-2_07_43-PM](https://github.com/user-attachments/assets/ff180110-2e97-4dc4-98db-f1f0d2e72036)
 
-![deployer](https://github.com/user-attachments/assets/bc530f28-22c9-4edc-a9d3-dd47d236c32d)
