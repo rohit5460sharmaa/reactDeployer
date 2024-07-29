@@ -38,7 +38,7 @@ app.use(express.json())
 
 app.post('/project', async (req, res) => {
     const { gitURL, slug } = req.body
-    const projectSlug = slug ? slug : generateSlug()
+    const projectSlug = slug ? slug : generateSlug() //we make a unique id becoz we don't want database intigration
 
     // Spin the container
     const command = new RunTaskCommand({
